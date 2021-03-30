@@ -19,7 +19,7 @@
       /*    EX1) Write a selector to target the title of the page */
 
             h1 {
-                color: chartreuse;
+                background-color:rgb(245, 215, 220);
             }
             /* EX2) Write a selector to target every children of the navbar */
 
@@ -499,16 +499,29 @@
         newLink.innerText = content;
         existingLinks.appendChild(newLink);
       };
-      addLink("Development");      
+      addLink("Development");
 
       // EX12) Write a function to change the color of the main title
-      const changeColor = function() {
+      const changeColor = function () {
+        let title = document.getElementsByTagName("h1");
+        title.style.color = "blue";
+      };
+      changeColor();
+
+      // EX13) Write a function to change the background of the jumbotron
+      const changeBackgroundColor = function () {
+        let jumbotron = document.getElementsByClassName("jumbotron");
+        jumbotron.style.backgroundColor = "cyan";
+      };
+      changeColor();
+    
+      // EX14) Write a function to remove all the links under "Elsewhere"
+      const removeAllLinks = function() {
+          let allLinks = document.getElementsByTagName("")
           
       }
 
 
-      // EX13) Write a function to change the background of the jumbotron
-      // EX14) Write a function to remove all the links under "Elsewhere"
       // EX15) Write a function to change the column size for post headings
       // EX16) Write a function to remove the "Search" magnifying glass icon
       // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
