@@ -1,37 +1,44 @@
-.navbar {
-    background-color: rgb(96, 200, 248);
-}
-.task1 {
-    height: 400px !important ;
-    border: solid ;
-    border-radius: 10%;
+div.footer li {
+    color: #ae8c8a;
+  }
+  
+  .customNavbar {
+    background-color: #007bff;
+  }
+  .task1 {
+    height: 400px;
+    border: solid;
+    border-radius: 50px;
     overflow: hidden;
-}
-.col-6 {
-    background-color: green;
-    
-}
-.col-6 div {   
-   padding: 50%;
-
-}
-.col-2 {
-    background-color: rgb(96, 200, 248);
-    
-}
-.col-2 div {   
+  }
+  .firstColumn {
+    background-color: #6bb56b;
+  }
+  .firstColumn div {
+    color: white;
     text-align: center;
-    margin-top: 340px;
+    margin-top: 150px;
+  }
+  .secondColumn {
+    background-color: #007bff;
+    color: white;
+  }
+  .secondColumn div {
+    text-align: center;
+    margin-top: 300px;
     font-weight: bold;
- 
- }
-.col-4 {
-    background-color: yellow;
-}
-.col-4 div {   
-    padding: 50%;
- 
- }
- .exercises{    
-     text-align: center;
- }
+    
+  }
+  .columnThree {
+    background-color: #ffe41f;
+    color: white;
+  }
+  .columnThree div {
+    text-align: center;
+    margin-top: 40px;
+  
+  }
+  .exercises {
+    text-align: center;
+  }
+  
