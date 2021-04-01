@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and submitted the GitHub link on Eduflow before 17:00
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers and rows correctly in order to have a great display
+
+ASSIGNMENT TOPIC 
+You are creating a website to showcase your favourite albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+
+IMPORTANT:
+Start from the previous Musical assignment project you've created on M2-D2
+
+NOTE:
+Most of the time, even the most expert designers, need inspiration.
+Spend some time surfing the web searching for the way of representing the albums that you like the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+
+    <title>M2_D9</title>
+
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.3/examples/blog/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* PREVIOUS STUFF */
+    </style>
+  </head>
+  <body>
+    <!-- EXERCISE 1
+        Use the specific bootstrap component to implement a Breadcrumb
+        -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">My Favorite list</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+
+    <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+        -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">My Favorite Albums of 2020</h1>
+              <p class="lead">The artists who helped me go through a rollercoaster year</p>
+            </div>
+          </div>
+
+
+    <!-- EXERCISE 3
+            Foreach album in the favorite list, place the genre inside a badge
+        -->
+        <section id="favorite-albums">
+            <div class="container">
+              <div class="row py-5">
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img
+                      src="images\220px-Chemistry_Falz_and_Simi_EP_cover.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h4 class="album-title">Bed Of Stone</h4>
+                    <h5 class="album-artiste"><span>Aṣa</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img
+                      src="images\220px-Chemistry_Falz_and_Simi_EP_cover.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h4 class="album-title">Chemistry</h4>
+                    <h5 class="album-artiste"><span>Falz & Simi</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img
+                      src="images\220px-The_Lion_King_The_Gift.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h4 class="album-title">The Lion King</h4>
+                    <h5 class="album-artiste"><span>Beyoncé</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img
+                      src="images\Alabaster_Box_(Cece_Winans_album_-_cover_art).jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h4 class="album-title">AlabasterBox</h4>
+                    <h5 class="album-artiste"><span>CeceWinans</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img src="images\cross my gaze.jpg" alt="" class="img-fluid" />
+                    <h4 class="album-title">Cross my gaze</h4>
+                    <h5 class="album-artiste"><span>Mercy Chinwo</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img src="images\the hill.jpg" alt="" class="img-fluid" />
+                    <h4 class="album-title">The Hill</h4>
+                    <h5 class="album-artiste"><span>Travis Greene</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img
+                      src="images\boo of the booless.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h4 class="album-title">Boo of the booless</h4>
+                    <h5 class="album-artiste"><span>Chike</span></h5>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+                  <div class="album-container">
+                    <img src="images\courage.jpg" alt="" class="img-fluid" />
+                    <h4 class="album-title">Courage</h4>
+                    <h5 class="album-artiste"><span>Celine Dion</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <!-- EXERCISE 4
+            Foreach album in the favorite list, use the Bootstrap Card to contain it.
+            Use card layouts to format it in the best and more compatible way.
+        -->
+
+    <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+
+    <!-- EXERCISE 6
+            Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
+            which will apply for the subsequent button you'll use.
+            Clicking on the button the row must disappear. 
+            Add a fade-out effect using a CSS transition effect
+        -->
+
+    <!-- EXERCISE 7
+            Add a "Contact Me" form in the footer.
+            The "Contact Me" form has 2 fields:
+            - Email
+            - Text of the message
+            Use the correct Bootstrap styles for styling the buttons
+        -->
+
+    <!-- EXERCISE 8 
+            Add to the footer an extra column with the same links of the top nav.
+        -->
+
+    <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album, add a nice shadow transition when the button is hovered
+        -->
+
+    <!-- EXERCISE 10
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track length
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+
+    <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            - The new list-element added to the list will appear with a fade-in transition effect
+            https://getbootstrap.com/docs/4.6/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+
+    <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+
+    <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+
+    <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+
+    <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
+        -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
