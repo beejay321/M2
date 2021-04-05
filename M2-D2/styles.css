@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+}
+.navbar {
+  background: #b4cca0;
+}
+.album-container {
+  margin: auto;
+}
+.album-container img {
+  width: 300px;
+  height: 250px;
+}
+.album-cover {
+  margin: auto;
+}
+.album-title {
+  color: white;
+  text-align: center;
+}
+.album-artiste {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.album-genre {
+  margin: auto;
+}
+.album-duration {
+}
+#best-album {
+  color: rgb(67, 113, 124);
+}
+.subheading {
+  margin-bottom: 25px;
+  color: rgb(67, 113, 124);
+}
+.square {
+  border: solid rgb(238, 237, 201);
+}
+
+.btn {
+  border: solid rgb(238, 237, 201);
+}

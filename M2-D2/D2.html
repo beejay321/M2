@@ -47,78 +47,72 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - The album duration
             - etc
          */
-      body {
-        background-color: rgba(124, 51, 51, 0.726);
-      }
-      .album-container {
-        margin: auto;
-      }
-      .album-container img {
-        width: 300px;
-        height: 250px;
-      }
-      .album-cover {
-        margin: auto;
-      }
-      .album-title {
-        color: white;
-        text-align: center;
-      }
-      .album-artiste {
-        color: white;
-        text-align: center;
-        margin: auto;
-      }
-      .album-genre {
-        margin: auto;
-      }
-      #favorite-album {
-        color: rgb(201, 237, 246);
-        width: 100%;
-      }
+      
     </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   </head>
   <body>
     <!-- EXERCISE 2 
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page
         -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#favorite-album"
-              >My Favorite List <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#favorites"
+                >Favorites <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#best-album"
+                >Best Album <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#hallOfShame"
+                >Hall of Shame <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#fav-artist"
+                >Artist of the year <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#covers"
+                >Covers <span class="sr-only">(current)</span></a
+              >
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
 
@@ -129,13 +123,16 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-    <section id="favorite-albums">
+
+        
+
+    <section id="favorites">
       <div class="container">
         <div class="row py-5">
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img
-                src="\images\220px-Bed-of-Stone-album.jpg"
+                src="images\220px-Bed-of-Stone-album.jpg"
                 alt=""
                 class="img-fluid"
               />
@@ -143,7 +140,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
               <h5 class="album-artiste"><span>Aṣa</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img
                 src="images\220px-Chemistry_Falz_and_Simi_EP_cover.jpg"
@@ -154,7 +151,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
               <h5 class="album-artiste"><span>Falz & Simi</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img
                 src="images\220px-The_Lion_King_The_Gift.png"
@@ -165,7 +162,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
               <h5 class="album-artiste"><span>Beyoncé</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img
                 src="images\Alabaster_Box_(Cece_Winans_album_-_cover_art).jpg"
@@ -176,21 +173,21 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
               <h5 class="album-artiste"><span>CeceWinans</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img src="images\cross my gaze.jpg" alt="" class="img-fluid" />
               <h4 class="album-title">Cross my gaze</h4>
               <h5 class="album-artiste"><span>Mercy Chinwo</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img src="images\the hill.jpg" alt="" class="img-fluid" />
               <h4 class="album-title">The Hill</h4>
               <h5 class="album-artiste"><span>Travis Greene</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img
                 src="images\boo of the booless.jpg"
@@ -201,7 +198,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
               <h5 class="album-artiste"><span>Chike</span></h5>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 mb-md-4">
             <div class="album-container">
               <img src="images\courage.jpg" alt="" class="img-fluid" />
               <h4 class="album-title">Courage</h4>
@@ -211,6 +208,14 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         </div>
       </div>
     </section>
+    <div class="container pt-3">
+      <p>
+        <a class="btn " data-toggle="collapse" href="#favorites" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Show/Hide
+        </a>
+        
+      </p>
+    </div>
 
     <!-- EXERCISE 4
           Create a section for the album reviews.
@@ -224,11 +229,12 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - ... And whatever you think it's interesting about it!
         -->
     <hr />
-    <section id="favorite-album" >
-      <div class="container py-5">
+    
+    <section  id="best-album">
+      <div class="container py-5 ">
         <div class="row">
-          <div class = "col-12 col-md-8">
-            <h2 py-5>My Favorite Album</h2>            
+          <div class="col-12 col-md-8">
+            <h2 py-5>The Cross my Gaze</h2>
             <p>
               Since its release on 20 February 2018, the album has produced at
               least one song, 'Excess Love', that features prominently in
@@ -236,45 +242,221 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
               the believer worship her maker, but along with its celebration of
               God, the album is also a celebration of highlife music, a genre
               originally created in Ghana but with different manifestations in
-              Yoruba and Igbo cultures.</p>
-              </div>
-              <div class = "col-12 col-md-4">
-              <img src="images\cross my gaze.jpg" alt=""  />
+              Yoruba and Igbo cultures.
+            </p>
           </div>
+          <div class="col-12 col-md-4">
+            <img src="images\cross my gaze.jpg" alt="" />
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Title</th>
+                <th scope="col">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Intro</td>
+                <td>2mins</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Bor Ekom</td>
+                <td>4mins</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>My responsibility</td>
+                <td>5mins</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
+    <div class="container pt-3">
+      <p>
+        <a class="btn " data-toggle="collapse" href="#favorites" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Show/Hide
+        </a>
+        
+      </p>
+    </div>
 
     <!-- EXERCISE 5
             Worst album list! Find out the music you don't really like or you find overrated and list it
             in this "hall of shame" chart!
         -->
-        <hr>
-        <section id="wallOfShame">
-          <div class="container py-5">
-            <div class="row">
-              <img src="https://placehold.it/250" class="img-fluid" alt=""  />
-              
-            </div>
-
+    <hr />
+    
+    <section id="hallOfShame">
+      <div class="container py-5">
+        <h3 class="subheading">Hall Of Shame</h3>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="images\cross my gaze.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-        </section>
+          <div class="col-12 col-md-4">
+            <img src="images\cross my gaze.jpg" alt="" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="images\cross my gaze.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container pt-3">
+      <p>
+        <a class="btn " data-toggle="collapse" href="#favorites" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Show/Hide
+        </a>
+        
+      </p>
+    </div>
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
+        <hr>
+        
+
+        <section id="fav-artist">
+          <div class="container py-5">            
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <h3 class="subheading">Favorite Artiste</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt itaque provident dolor veritatis facilis unde error quis accusantium explicabo dolore officiis repellendus consequatur quae laborum excepturi esse iure, quisquam tenetur?
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <img src="images\cross my gaze.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+    
+
+            </div>
+
+          </div>
+        </section>
+        <div class="container pt-3">
+          <p>
+            <a class="btn " data-toggle="collapse" href="#favorites" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Show/Hide
+            </a>
+            
+          </p>
+        </div>
 
     <!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
             Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
         -->
+        <hr>
+        
+        <section id="covers">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              <div class="col col-sm-6 col-md-4 col-lg-2  py-3">
+                <img class="img-fluid square" src="images\cross my gaze.jpg" alt="" />
+              </div>
+              
+              
+            </div>
+          </div>
+
+        </section>
+        <div class="container pt-3">
+          <p>
+            <a class="btn " data-toggle="collapse" href="#favorites" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Show/Hide
+            </a>
+            
+          </p>
+        </div>
 
     <!-- EXERCISE 8
             Implement a footer with some information / social links
         -->
+        <footer>
+          <div class="container my-5">
+            <div class="row  d-flex justify-content-center ml-5">
+              <div class="col-2 ">
+                <p >@Copyright 2050</p>
+              </div>
+              <div class="col-2">
+                <a href="">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+              <div class="col-2">
+               <a href="" >
+                  <i class="bi bi-facebook"> </i>
+               </a >
+              </div>
+              
+              
+            </div>
+          </div>
+        </footer>
 
     <!-- EXTRA:
             EXERCISE 9
@@ -291,7 +473,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
         -->
 
-    <!-- Bootstrap CSS -->  
+    <!-- Bootstrap CSS -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
